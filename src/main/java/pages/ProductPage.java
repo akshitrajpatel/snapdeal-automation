@@ -9,7 +9,6 @@ public class ProductPage {
     // Locators for elements on the ProductPage
     By firstProduct = By.cssSelector(".product-tuple-listing .dp-widget-link");
     By addToCartButton = By.cssSelector("#add-cart-button-id");
-
     // Constructor
     public ProductPage(WebDriver driver) {
         this.driver = driver;
