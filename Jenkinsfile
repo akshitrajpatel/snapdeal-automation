@@ -34,7 +34,7 @@ pipeline {
         stage('Test') {
             steps {
                 // Run the TestNG tests
-                bat 'mvn tests'
+                bat 'mvn test'
             }
             post {
                 always {
