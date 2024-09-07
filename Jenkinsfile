@@ -1,6 +1,5 @@
 pipeline {
     agent any
-
     tools {
         maven 'maven'
         jdk 'JDK21'  // Make sure this matches the name you gave in Global Tool Configuration
@@ -25,8 +24,16 @@ pipeline {
             }
         }
 
+        stage('Install Dependencies') {
+            steps {
+                // Clean the project and install dependencies
+                bat 'mvn clean install -DskipTests'
+            }
+        }
+
         stage('Test') {
             steps {
+                // Run the TestNG tests
                 bat 'mvn test'
             }
             post {
