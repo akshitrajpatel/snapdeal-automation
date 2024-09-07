@@ -31,7 +31,7 @@ public class SnapdealTest {
     public void searchAndAddToCart() {
         homePage.searchProduct("Mobile Phone"); // Search for a product
         productPage.selectFirstProduct();       // Select the first product
-        productPage.addToCart();                // Add product to the cart
+        productPage.addToCartUsingJS();         // Add product to the cart using JavaScriptExecutor
     }
 
     // Teardown method to close the browser
