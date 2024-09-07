@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        CHROME_DRIVER_HOME = "C:\Tools\chromedriver_win32" // Optional, as WebDriverManager handles this
+        CHROME_DRIVER_HOME = "C:/Tools/chromedriver_win32" // Optional, as WebDriverManager handles this
     }
     tools {
         maven 'maven' // Maven setup in Jenkins global configuration
