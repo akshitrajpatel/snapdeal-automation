@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Snapdeal Test Suite">
+    <test name="Snapdeal Tests">
+        <classes>
+            <class name="tests.SnapdealTest" />
+        </classes>
+    </test>
+</suite>
